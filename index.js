@@ -35,9 +35,12 @@ function addNumbers(num1, num2) {
  * the returned value should look like: 'Goodbye, Andy. Have a great day.'
  * 
 */
-function sayGoodbye(/* code here */) {
-  /* code here */
+function sayGoodbye(name) {
+  return `Goodbye ${name}. Have a great day`;
 }
+
+
+console.log(sayGoodbye(Andy));
 
 /**
  * ### Challenge `temperatureCtoF`
@@ -53,9 +56,25 @@ function sayGoodbye(/* code here */) {
  * Hint 1: The formula for converting celsius to fahrenheit is t*9/5 + 32 where t is the temperature in celsius.
  * Hint 2: There is a very easy way to round numbers in JS. Do a google search to find out how. 
 */
-function temperatureCtoF(/* code here */) {
-  /* code here */
-}
+function temperatureCtoF(temperatureInC) {
+    const temperatureInF = (temperatureInC * 9) / 5 + 32;
+
+    console.log(temperatureInF);
+  
+    return temperatureInF;
+  }
+  
+  temperatureCtoF(32);
+  temperatureCtoF(45);
+
+                                  OR
+
+function temperatureCtoF(tempInc) {
+  const t = tempIncC
+  const t = tempCtoF = Math.round(t*9/5 + 32)
+
+  return tempCtoF
+}  
 
 /**
  * ### Challenge `temperatureInF`
@@ -74,10 +93,36 @@ function temperatureCtoF(/* code here */) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(temperatureInF, unit) {
+  if (unit === "F") {
+    return Math.round(temperatureInF);
+  }
+  if (unit === "C") {
+    return temperatureCtoF(temperatureInF);
+  }
 }
 
+
+
+
+
+function temperatureInF(temperature, unit) {
+  Math.round(t*9/5 + 32)
+  return tempInF;
+
+
+  if (unit== 'C'){
+    return tempconversion
+  }
+  else {                      if(unit == 'F')
+    return (temperature, unit)
+  }
+}
+
+temperatureInF(88, 'F')
+//88F
+temperatureInF(24, 'F')
+//75F
 
 /**
  * ### Challenge `makePersonObject`
@@ -95,9 +140,13 @@ function temperatureInF(/* code here */) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(id, name, email) {
+  id: 'id',
+  name: 'name',
+  email: 'email'
 }
+}
+makePersonObject(5, 'leia', 'leia@leia.com');
 
 /**
  * ### Challenge `getName`
