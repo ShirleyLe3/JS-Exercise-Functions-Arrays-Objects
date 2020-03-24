@@ -36,8 +36,9 @@ function addNumbers(num1, num2) {
  * 
 */
 function sayGoodbye(name) {
-  return 'Goodbye, ${name}. Have a great day.'  
+  return `Goodbye ${name}. Have a great day`;
 }
+
 
 console.log(sayGoodbye(Andy));
 
@@ -66,6 +67,14 @@ function temperatureCtoF(temperatureInC) {
   temperatureCtoF(32);
   temperatureCtoF(45);
 
+                                  OR
+
+function temperatureCtoF(tempInc) {
+  const t = tempIncC
+  const t = tempCtoF = Math.round(t*9/5 + 32)
+
+  return tempCtoF
+}  
 
 /**
  * ### Challenge `temperatureInF`
@@ -86,13 +95,34 @@ function temperatureCtoF(temperatureInC) {
 */
 function temperatureInF(temperatureInF, unit) {
   if (unit === "F") {
-    return Math.round(temperature);
+    return Math.round(temperatureInF);
   }
   if (unit === "C") {
-    return temperatureCtoF(temperature);
+    return temperatureCtoF(temperatureInF);
   }
 }
 
+
+
+
+
+function temperatureInF(temperature, unit) {
+  Math.round(t*9/5 + 32)
+  return tempInF;
+
+
+  if (unit== 'C'){
+    return tempconversion
+  }
+  else {                      if(unit == 'F')
+    return (temperature, unit)
+  }
+}
+
+temperatureInF(88, 'F')
+//88F
+temperatureInF(24, 'F')
+//75F
 
 /**
  * ### Challenge `makePersonObject`
@@ -110,9 +140,13 @@ function temperatureInF(temperatureInF, unit) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(id, name, email) {
+  id: 'id',
+  name: 'name',
+  email: 'email'
 }
+}
+makePersonObject(5, 'leia', 'leia@leia.com');
 
 /**
  * ### Challenge `getName`
